@@ -61,7 +61,7 @@ AI小花：https://github.com/nilboy/reports/blob/master/gaic_track_3.md
 <br>2、模型融合Stacking
 <br>3、自蒸馏
 <br>4、伪标签（试过一次，效果不好，找bug中）
-<br>注意：复赛有限时，融合需谨慎。
+<br>注意：复赛有限时，融合需谨慎。单模base模型效果才是王道。
 
 ## 联系作者
 本人常在知乎分享论文、炼丹经验等，感兴趣的小伙伴可以关注我一下，知乎ID：刘聪NLP。
