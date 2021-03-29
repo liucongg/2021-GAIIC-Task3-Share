@@ -3,8 +3,7 @@
 
 ## 周星星分享
 非常荣幸能够拿到周星星，目前初赛第四，本着互联网开源精神，这里也做一些的分享，和大家相互学习，共同进步。
-
-
+<br>![](image/ranking.png)
 
 ## 数据
 1、对偶数据增强，即Q1-Q2 pair变成Q2-Q1 pair；
@@ -17,7 +16,7 @@
 1、ESIM， [详细介绍](https://zhuanlan.zhihu.com/p/73408108)
 <br>2、Bimpm，[详细介绍](https://zhuanlan.zhihu.com/p/72403578)
 <br>3、SentenceBert，[详细介绍](https://zhuanlan.zhihu.com/p/113133510)
-<br>注意：半交互是我们一开始的思路，底层使用双路bert，上层使用bert前模型，使用ESIM单模加上trick，单模也可以上0.89，但是后面使用全交互，效果更好，就没有再继续实验了。
+<br>注意：半交互是我们一开始的思路，底层使用双路bert，上层使用bert前模型等；并且使用ESIM单模加上trick，单模也可以上0.89，但是后面使用全交互，效果更好，就没有再继续实验了。
 ### 全交互
 1、先MLM预训练，再微调；
 <br>2、MLM预训练与微调一起做，[苏神代码思路](https://github.com/bojone/oppo-text-match)
@@ -34,7 +33,7 @@
 1、BERT模型对Sequence Output求mean pooling与cls拼接，或者加和；
 <br>2、Multi-Dropout，[详细介绍](https://arxiv.org/pdf/1905.09788.pdf)
 <br>3、BERT Embedding + Dense 与cls拼接；
-<br>4、BERT 后3层cls拼接或加和；
+<br>4、BERT 多层cls拼接或加和；
 <br>5、BERT + GRU；
 <br>6、BERT + HighWay；
 <br>7、对抗学习FGM和PGD，PGD效果更好，但是耗时太久。
@@ -49,7 +48,7 @@
 <br>5、UniLm，[详细介绍](https://zhuanlan.zhihu.com/p/163483660)
 <br>6、NeZha，[详细介绍](https://zhuanlan.zhihu.com/p/100044919)
 <br>注意：由于复赛有时间限制，我们进行了时间估算，感觉large模型无法满足时间要求，因此这里的模型使用的都是Base。
-单模最佳线上能到0.906，融合之后线上目前0.917877。上大模型融合，应该会更好，但是目前还没训练出来。
+单模最佳线上能到0.906，融合之后线上目前0.917877。上大模型融合，应该会更好，但是目前还没训练出来，感觉是学习率的问题，训练到一半loss直接崩盘。
 
 ## 之前周星星的分享
 AI小花：https://github.com/nilboy/reports/blob/master/gaic_track_3.md 
