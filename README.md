@@ -1,8 +1,8 @@
 # 2021-GAIIC-Task3-Share
 全球人工智能技术创新大赛-赛道三：小布助手对话短文本语义匹配
 
-## 周星星分享
-非常荣幸能够拿到周星星，目前初赛第四，本着互联网开源精神，这里也做一些的分享，和大家相互学习，共同进步。
+## 周周星分享
+非常荣幸能够拿到周周星，目前初赛第四，本着互联网开源精神，这里也做一些的分享，和大家相互学习，共同进步。
 <br>![](image/ranking.png)
 
 ## 数据
@@ -51,7 +51,7 @@
 <br>注意：由于复赛有时间限制，我们进行了时间估算，感觉large模型无法满足时间要求，因此这里的模型使用的都是Base，loss一般降到0.3左右。
 单模最佳线上能到0.906，融合之后线上目前0.917877。上大模型融合，应该会更好，但是目前还没训练出来，感觉是学习率的问题，训练到一半loss直接崩盘。
 
-## 之前周星星的分享
+## 之前周周星的分享
 AI小花：https://github.com/nilboy/reports/blob/master/gaic_track_3.md 
 <br>ch12hu：https://github.com/chizhu/tianchi-gaic-track3-share
 <br>lololol：https://github.com/luoda888/2021-GAIIC-phase3-idea 
