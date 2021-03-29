@@ -14,9 +14,10 @@
 
 ## 模型训练方式
 ### 半交互
-1、ESIM
-<br>2、[SentenceBert](https://zhuanlan.zhihu.com/p/113133510)
-<br>注意：半交互是我们一开始的思路，使用ESIM单模加上trick，单模也可以上0.89，但是后面使用全交互，效果更好，就没有再继续实验了。
+1、ESIM， [详细介绍](https://zhuanlan.zhihu.com/p/73408108)
+<br>2、Bimpm，[详细介绍](https://zhuanlan.zhihu.com/p/72403578)
+<br>3、SentenceBert，[详细介绍](https://zhuanlan.zhihu.com/p/113133510)
+<br>注意：半交互是我们一开始的思路，底层使用双路bert，上层使用bert前模型，使用ESIM单模加上trick，单模也可以上0.89，但是后面使用全交互，效果更好，就没有再继续实验了。
 ### 全交互
 1、先MLM预训练，再微调；
 <br>2、MLM预训练与微调一起做，[苏神代码思路](https://github.com/bojone/oppo-text-match)
@@ -31,7 +32,7 @@
 
 ## 模型魔改
 1、BERT模型对Sequence Output求mean pooling与cls拼接，或者加和；
-<br>2、[Multi-Dropout](https://arxiv.org/pdf/1905.09788.pdf)
+<br>2、Multi-Dropout，[详细介绍](https://arxiv.org/pdf/1905.09788.pdf)
 <br>3、BERT Embedding + Dense 与cls拼接；
 <br>4、BERT 后3层cls拼接或加和；
 <br>5、BERT + GRU；
@@ -41,12 +42,12 @@
 
 ## 模型融合
 模型融合讲究和而不同，因此我们这里使用了多种模型进行融合。
-1、BERT
-<br>2、[MacBERT](https://zhuanlan.zhihu.com/p/250595837)
-<br>3、[Zen](https://github.com/sinovation/ZEN)
+<br>1、BERT
+<br>2、MacBERT，[详细介绍](https://zhuanlan.zhihu.com/p/250595837)
+<br>3、Zen，[详细介绍](https://github.com/sinovation/ZEN)
 <br>4、XlNet
-<br>5、[UniLm](https://zhuanlan.zhihu.com/p/163483660)
-<br>6、[NeZha](https://zhuanlan.zhihu.com/p/100044919)
+<br>5、UniLm，[详细介绍](https://zhuanlan.zhihu.com/p/163483660)
+<br>6、NeZha，[详细介绍](https://zhuanlan.zhihu.com/p/100044919)
 <br>注意：由于复赛有时间限制，我们进行了时间估算，感觉large模型无法满足时间要求，因此这里的模型使用的都是Base。
 单模最佳线上能到0.906，融合之后线上目前0.917877。上大模型融合，应该会更好，但是目前还没训练出来。
 
@@ -65,7 +66,7 @@ AI小花：https://github.com/nilboy/reports/blob/master/gaic_track_3.md
 
 ## 联系作者
 本人常在知乎分享论文、炼丹经验等，感兴趣的小伙伴可以关注我一下，知乎ID：刘聪NLP。
-<br>打个广告，目前公司在南京招NLP实习生，方向：语义理解、实体抽取、知识图谱、阅读理解、生成等，不限。感兴趣的小伙伴可以给我发邮件或加我微信私聊我。公司是南京云问网络技术有限公司。
+<br>打个广告，目前公司在南京招NLP实习生，方向：语义理解、实体抽取、知识图谱、阅读理解、生成等，不限。感兴趣的小伙伴可以给我发邮件或加我微信私聊。公司是南京云问网络技术有限公司。
 * e-mail：logcongcong@gmail.com
 * 知乎：[刘聪NLP](https://www.zhihu.com/people/LiuCongNLP)
 * 公众号：[NLP工作站]()
