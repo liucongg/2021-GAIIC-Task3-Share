@@ -65,7 +65,7 @@ AI小花：https://github.com/nilboy/reports/blob/master/gaic_track_3.md
 
 ## 联系作者
 本人常在知乎分享论文、炼丹经验等，感兴趣的小伙伴可以关注我一下，知乎ID：刘聪NLP。
-<br>打个广告，目前公司在南京招NLP实习生，方向：语义理解、实体抽取、知识图谱、阅读理解、生成等，不限。感兴趣的小伙伴可以给我发邮件或加我微信私聊。公司是南京云问网络技术有限公司。
+<br>打个广告，目前公司在南京（base南京）招NLP实习生，方向：语义理解、实体抽取、知识图谱、阅读理解、生成等。感兴趣的小伙伴可以给我发邮件或加我微信私聊。公司是南京云问网络技术有限公司。
 * e-mail：logcongcong@gmail.com
 * 知乎：[刘聪NLP](https://www.zhihu.com/people/LiuCongNLP)
 * 公众号：[NLP工作站]()
